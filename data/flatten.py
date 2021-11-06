@@ -20,6 +20,6 @@ with open("Appearances-Grid view.csv", "r") as f:
 
 with open('tv_cands.csv', mode='w') as out_file:
     w = csv.writer(out_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    w.writerow(["Дата", "Телевизия","Предаване", "Партия", "Кандидат", "Линк"])
+    w.writerow(["Дата", "Телевизия","Предаване", "Кандидат", "Партия", "Линк"])
     for row in out:
         w.writerow(row)
